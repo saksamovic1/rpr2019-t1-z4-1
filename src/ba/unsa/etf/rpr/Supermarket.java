@@ -6,7 +6,7 @@ public class Supermarket {
     ArrayList<Artikl> listaArtikalaUSupermarketu = new ArrayList<Artikl>(1000);
 
     public Artikl[] getArtikli() {
-        Artikl[] artikli = new Artikl[50];
+        Artikl[] artikli = new Artikl[1000];
         int i = 0;
         for(Artikl a : listaArtikalaUSupermarketu) {
             artikli[i] = a;
