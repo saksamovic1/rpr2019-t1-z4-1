@@ -5,6 +5,12 @@ public class Artikl {
     private int cijena;
     private String kod;
 
+    @Override
+    public boolean equals(Object obj) {
+        Artikl artikl = (Artikl) obj;
+        return artikl.getNaziv().equals(this.getNaziv()) && ((Integer) artikl.getCijena()).equals((Integer) this.getCijena()) && artikl.getKod().equals(this.getKod());
+    }
+
     public Artikl(String naziv, int cijena, String kod) {
         this.naziv = naziv;
         this.cijena = cijena;
@@ -22,4 +28,5 @@ public class Artikl {
     public String getKod() {
         return kod;
     }
+
 }

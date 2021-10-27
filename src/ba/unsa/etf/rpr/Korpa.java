@@ -3,7 +3,7 @@ package ba.unsa.etf.rpr;
 import java.util.ArrayList;
 
 public class Korpa {
-    ArrayList<Artikl> listaArtikalaUKorpi = new ArrayList<>(50);
+    ArrayList<Artikl> listaArtikalaUKorpi = new ArrayList<>();
 
     public boolean dodajArtikl(Artikl a) {
         if (listaArtikalaUKorpi.size()<50) {
@@ -14,7 +14,7 @@ public class Korpa {
     }
 
     public Artikl[] getArtikli() {
-        Artikl[] artikli = new Artikl[50];
+        Artikl[] artikli = new Artikl[listaArtikalaUKorpi.size()];
         int i = 0;
         for(Artikl a : listaArtikalaUKorpi) {
             artikli[i] = a;
